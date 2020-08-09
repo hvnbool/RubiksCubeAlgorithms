@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30330.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RubiksCubeAlgorithms.WebApi", "RubiksCubeAlgorithms.WebApi\RubiksCubeAlgorithms.WebApi.csproj", "{294A7691-4B84-4E18-8FDC-82C9BB299CE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RubiksCubeAlgorithms.WebApi", "RubiksCubeAlgorithms.WebApi\RubiksCubeAlgorithms.WebApi.csproj", "{294A7691-4B84-4E18-8FDC-82C9BB299CE1}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RubiksCubeAlgorithms.Models", "RubiksCubeAlgorithms.Models\RubiksCubeAlgorithms.Models.csproj", "{609221FE-EF94-4471-84CC-9D8B12CC405A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RubiksCubeAlgorithms.WPF", "RubiksCubeAlgorithms.WPFClient\RubiksCubeAlgorithms.WPF.csproj", "{026775E3-5BE6-4ABF-B349-F280BBC22E2A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{609221FE-EF94-4471-84CC-9D8B12CC405A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{609221FE-EF94-4471-84CC-9D8B12CC405A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{609221FE-EF94-4471-84CC-9D8B12CC405A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026775E3-5BE6-4ABF-B349-F280BBC22E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026775E3-5BE6-4ABF-B349-F280BBC22E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026775E3-5BE6-4ABF-B349-F280BBC22E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026775E3-5BE6-4ABF-B349-F280BBC22E2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,115 @@
+﻿<UserControl x:Class="RubiksCubeAlgorithms.WPF.Views.StepView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:views="clr-namespace:RubiksCubeAlgorithms.WPF.Views"
+             xmlns:viewModels="clr-namespace:RubiksCubeAlgorithms.WPF.ViewModels"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:DataContext="{d:DesignInstance viewModels:StepViewModel}">
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type viewModels:CaseViewModel}">
+            <views:CaseView />
+        </DataTemplate>
+    </UserControl.Resources>
+    
+    <Border Padding="50 0" Background="White">
+        <Grid>
+            <!-- Step info and cases -->
+            <StackPanel Grid.ZIndex="1">
+
+                <ItemsControl ItemsSource="{Binding Cases}" Grid.IsSharedSizeScope="True"
+                          BorderThickness="0" Background="Transparent">
+                    
+                    
+                    
+                    <!-- ItemsControl Panel definition -->
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <WrapPanel Orientation="Horizontal" />
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                    
+                    <ItemsControl.ItemTemplate>
+                        <!-- Case template -->
+                        <DataTemplate DataType="{x:Type viewModels:CaseViewModel}">
+                            
+                            
+                            <Grid Margin="7" Background="Transparent">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" SharedSizeGroup="ColumnSize" />
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Item animation -->
+                                <Grid.Style>
+                                    <Style TargetType="{x:Type Grid}">
+                                        <Style.Triggers>
+                                            <Trigger Property="IsMouseOver" Value="True">
+                                                <Setter Property="RenderTransformOrigin" Value="0.5, 0.5"></Setter>
+                                                <Setter Property="RenderTransform">
+                                                    <Setter.Value>
+                                                        <ScaleTransform ScaleX="1.1" ScaleY="1.1" />
+                                                    </Setter.Value>
+                                                </Setter>
+                                            </Trigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </Grid.Style>
+
+                                <!-- Item bindings -->
+                                <Grid.InputBindings>
+                                    <MouseBinding MouseAction="LeftClick"
+                                                  Command="{Binding Path=DataContext.SelectCaseCommand, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}"
+                                                  CommandParameter="{Binding}">
+                                    </MouseBinding>
+                                </Grid.InputBindings>
+
+                                <!-- Card shadow -->
+                                <Border Grid.ZIndex="1"  Background="Black" CornerRadius="15" BorderThickness="1">
+                                    <Border.Effect>
+                                        <DropShadowEffect Direction="270" Opacity="0.5"/>
+                                    </Border.Effect>
+                                </Border>
+
+                                <!-- Card content -->
+                                <Border Grid.ZIndex="2" CornerRadius="15" 
+                                        Padding="10" BorderBrush="LightGray" 
+                                        BorderThickness="0.5"
+                                        Background="White">
+                                    <StackPanel>
+                                        <Image Width="80" Height="80" Margin="0 10"
+                                               Source="{Binding Case.BitmapImage}" />
+                                        <TextBlock Width="Auto" Text="{Binding Case.Name}"
+                                                   Style="{StaticResource DefaultTextBlock}" 
+                                                   TextAlignment="Center" />
+                                    </StackPanel>
+                                </Border>
+
+                            </Grid>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+            </StackPanel>
+
+            <!-- Selected case view -->
+            <Grid Grid.ZIndex="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                
+                <ContentControl Grid.Row="1" Grid.Column="1" 
+                    Content="{Binding SelectedCaseViewModel}"></ContentControl>
+            </Grid>
+        </Grid>
+    </Border>
+</UserControl>
