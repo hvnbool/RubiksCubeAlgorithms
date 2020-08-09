@@ -1,24 +1,18 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
+using System.Reflection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using RubiksCubeAlgorithmsWebApi.DAL;
-using RubiksCubeAlgorithmsWebApi.Services.EFImplementations;
-using RubiksCubeAlgorithmsWebApi.Services.Interfaces;
-using System.Reflection;
-using System.IO;
 using Microsoft.OpenApi.Models;
+using RubiksCubeAlgorithms.WebApi.DAL;
+using RubiksCubeAlgorithms.WebApi.Services.EFImplementations;
+using RubiksCubeAlgorithms.WebApi.Services.Interfaces;
 
-namespace RubiksCubeAlgorithmsWebApi
+namespace RubiksCubeAlgorithms.WebApi
 {
     public class Startup
     {

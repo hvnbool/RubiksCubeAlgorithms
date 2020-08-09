@@ -3,9 +3,9 @@ using System.Threading.Tasks;
 using System.Web;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using RubiksCubeAlgorithmsWebApi.Services.Interfaces;
+using RubiksCubeAlgorithms.WebApi.Services.Interfaces;
 
-namespace RubiksCubeAlgorithmsWebApi.Services.EFImplementations
+namespace RubiksCubeAlgorithms.WebApi.Services.EFImplementations
 {
     public class ImagesService : IImagesService
     {

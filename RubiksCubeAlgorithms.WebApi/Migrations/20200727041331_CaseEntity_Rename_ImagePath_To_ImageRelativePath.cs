@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace RubiksCubeAlgorithmsWebApi.Migrations
+namespace RubiksCubeAlgorithms.WebApi.Migrations
 {
     public partial class CaseEntity_Rename_ImagePath_To_ImageRelativePath : Migration
     {

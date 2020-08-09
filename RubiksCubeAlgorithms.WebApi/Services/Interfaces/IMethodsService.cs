@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using RubiksCubeAlgorithms.Models;
 
-namespace RubiksCubeAlgorithmsWebApi.Services.Interfaces
+namespace RubiksCubeAlgorithms.WebApi.Services.Interfaces
 {
     public interface IMethodsService
     {

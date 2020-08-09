@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace RubiksCubeAlgorithmsWebApi.DAL.Entities
+namespace RubiksCubeAlgorithms.WebApi.DAL.Entities
 {
     /// <summary>
     /// Entity that represents a method of solving a Rubik's cube

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace RubiksCubeAlgorithmsWebApi.Migrations
+namespace RubiksCubeAlgorithms.WebApi.Migrations
 {
     public partial class InitialMigration : Migration
     {

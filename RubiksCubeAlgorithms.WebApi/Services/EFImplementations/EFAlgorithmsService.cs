@@ -3,11 +3,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RubiksCubeAlgorithms.Models;
-using RubiksCubeAlgorithmsWebApi.DAL;
-using RubiksCubeAlgorithmsWebApi.DAL.Entities;
-using RubiksCubeAlgorithmsWebApi.Services.Interfaces;
+using RubiksCubeAlgorithms.WebApi.DAL;
+using RubiksCubeAlgorithms.WebApi.DAL.Entities;
+using RubiksCubeAlgorithms.WebApi.Services.Interfaces;
 
-namespace RubiksCubeAlgorithmsWebApi.Services.EFImplementations
+namespace RubiksCubeAlgorithms.WebApi.Services.EFImplementations
 {
     public class EFAlgorithmsService : IAlgorithmsService
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using RubiksCubeAlgorithmsWebApi.DAL.Entities;
+using RubiksCubeAlgorithms.WebApi.DAL.Entities;
 
-namespace RubiksCubeAlgorithmsWebApi.DAL
+namespace RubiksCubeAlgorithms.WebApi.DAL
 {
     public class RubiksCubeContext : DbContext
     {

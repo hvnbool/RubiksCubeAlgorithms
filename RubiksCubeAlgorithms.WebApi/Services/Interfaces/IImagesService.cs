@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace RubiksCubeAlgorithmsWebApi.Services.Interfaces
+namespace RubiksCubeAlgorithms.WebApi.Services.Interfaces
 {
     public interface IImagesService
     {

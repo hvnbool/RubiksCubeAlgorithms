@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace RubiksCubeAlgorithmsWebApi.DAL.Entities
+namespace RubiksCubeAlgorithms.WebApi.DAL.Entities
 {
     /// <summary>
     /// Entity for many-to-many relationships between steps and cases that can be encountered during these steps

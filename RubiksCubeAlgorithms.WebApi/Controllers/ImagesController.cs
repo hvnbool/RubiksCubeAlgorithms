@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web;
-using RubiksCubeAlgorithmsWebApi.Services.Interfaces;
+using RubiksCubeAlgorithms.WebApi.Services.Interfaces;
 
-namespace RubiksCubeAlgorithmsWebApi.Controllers
+namespace RubiksCubeAlgorithms.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

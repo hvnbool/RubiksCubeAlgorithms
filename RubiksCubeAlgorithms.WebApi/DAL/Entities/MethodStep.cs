@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace RubiksCubeAlgorithmsWebApi.DAL.Entities
+namespace RubiksCubeAlgorithms.WebApi.DAL.Entities
 {
     /// <summary>
     /// Entity for many-to-many relationship between methods and steps that these methods include 
