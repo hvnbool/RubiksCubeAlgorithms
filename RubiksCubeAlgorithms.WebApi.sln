@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RubiksCubeAlgorithms.Models", "RubiksCubeAlgorithms.Models\RubiksCubeAlgorithms.Models.csproj", "{609221FE-EF94-4471-84CC-9D8B12CC405A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RubiksCubeAlgorithms.WPF", "RubiksCubeAlgorithms.WPFClient\RubiksCubeAlgorithms.WPF.csproj", "{026775E3-5BE6-4ABF-B349-F280BBC22E2A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{609221FE-EF94-4471-84CC-9D8B12CC405A} = {609221FE-EF94-4471-84CC-9D8B12CC405A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
